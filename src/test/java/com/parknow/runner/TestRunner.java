@@ -24,7 +24,8 @@ import org.junit.runner.RunWith;
         glue = {"com.parknow.stepdefs"},
         dryRun = false,
         monochrome = true,
-        plugin = {"pretty", "html:target/cucumber-reports", "json:target/cucumber.json"})
+        plugin = {"pretty", "html:target/cucumber-reports", "json:target/cucumber.json",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 @RunWith(Cucumber.class)
 public class TestRunner {
     @AfterClass
